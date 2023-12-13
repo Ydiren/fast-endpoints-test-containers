@@ -33,7 +33,7 @@ internal class CreateTemplateEndpoint : Endpoint<CreateTemplateRequest, CreateTe
         _dbContext.Templates.Add(entity);
         await _dbContext.SaveChangesAsync(ct);
         
-        await SendAsync(Map.FromEntity(entity));
+        await SendOkAsync(Map.FromEntity(entity));
     }
 }
 
