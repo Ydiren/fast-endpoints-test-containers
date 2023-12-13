@@ -1,5 +1,6 @@
 using FastEndpoints;
 using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
 using TemplatesApi.Data;
 using TemplatesApi.Data.Entities;
 
@@ -16,7 +17,7 @@ sealed class GetTemplateEndpoint : Endpoint<GetTemplateRequest, GetTemplateRespo
     
     public override void Configure()
     {
-        Get("route-pattern");
+        Get("/api/templates/{id}");
         AllowAnonymous();
     }
 
@@ -35,6 +36,7 @@ sealed class GetTemplateEndpoint : Endpoint<GetTemplateRequest, GetTemplateRespo
 
 sealed class GetTemplateRequest
 {
+    [FromRoute]
     public Guid Id { get; set; }
 }
 
