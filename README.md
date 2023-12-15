@@ -2,6 +2,9 @@
 ## Description
 
 A small project to demonstrate the usage of both FastEndpoints and Test Containers in the same solution.
+
+This is about as bare bones as a project can get. There's plenty of scope to expand this (e.g. implement middleware to add correlation ids, logging etc) but it should get the overall gist of the architectural pattern.
+
 ## [FastEndpoints](https://fast-endpoints.com/)<br/>
 FastEndpoints uses the REPR pattern (Request-EndPoint-Response) to keep all classes/files related to the endpoint in close proximity (usually all within the same file)
 
