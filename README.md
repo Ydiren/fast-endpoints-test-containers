@@ -7,7 +7,9 @@ FastEndpoints uses the REPR pattern (Request-EndPoint-Response) to keep all clas
 
 Out of the box, FastEndpoints provides patterns for easily implementing Endpoints, validators and mappers. Using the provided snippets it becomes really easy to generate a new endpoint, all of the boiler plate is done for you!
 #### FastEndpoint Resources
-[Visual Studio Snippets](https://fast-endpoints.com/docs/scaffolding#feature-scaffolding)<br/>
+[Snippets documentation](https://fast-endpoints.com/docs/scaffolding#feature-scaffolding)<br/>
+[Visual Studio Snippets](https://marketplace.visualstudio.com/items?itemName=dj-nitehawk.FastEndpoints)<br/>
+[Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=drilko.fastendpoints)<br/>
 [Rider Snippets](https://gist.github.com/dj-nitehawk/6493cb85bf3bb20aad5d2fd7814bad15)
 
 ## [Test containers](https://testcontainers.com/)
