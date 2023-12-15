@@ -12,3 +12,4 @@ Out of the box, FastEndpoints provides patterns for easily implementing Endpoint
 
 ## [Test containers](https://testcontainers.com/)
 Test containers are used to allow easier integration testing. The test container setup is encapsulated inside the DatabaseFixture class that gets injected into each test class by the xUnit framework. NUnit is also supported.
+There are no unit tests in this solution. The application seemed too simple to need any, but if there was more business logic in the app (e.g. if there were any services etc) then these would be expected to have unit tests created. 
