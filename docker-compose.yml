@@ -1,5 +1,6 @@
 version: '3.4'
 
+name: templates-api
 services:
   seq:
     image: datalust/seq:latest
