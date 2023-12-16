@@ -10,9 +10,6 @@ public class RequestLoggingFilter(ILogger<RequestLoggingFilter> logger) : IEndpo
         var endpoint = context.HttpContext.GetEndpoint();
         var endpointName = endpoint?.DisplayName ?? string.Empty;
         
-        logger.LogInformation("Processing Request {EndpointName}", endpointName);
-        Log.Logger.Information("Serilog Processing Request {EndpointName}", endpointName);
-        
         var result = await next(context);
         
         if (context.HttpContext.Response.StatusCode < 400)

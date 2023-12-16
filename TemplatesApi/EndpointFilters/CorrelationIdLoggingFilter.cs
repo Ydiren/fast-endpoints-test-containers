@@ -15,8 +15,6 @@ public class CorrelationIdLoggingFilter : IEndpointFilter
     public async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
     {
         var correlationId = GetCorrelationId(context.HttpContext);
-        _logger.LogInformation("CorrelationId: {CorrelationId}", correlationId);
-        Log.Logger.Information("Serilog CorrelationId: {CorrelationId}", correlationId);
 
         using (LogContext.PushProperty("CorrelationId", correlationId))
         {
